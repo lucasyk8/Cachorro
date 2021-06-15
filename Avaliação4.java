@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * 
  * @author Lucas Yugi Kumagai
- * @version 1.1 (2021-06-11)
+ * @version 1.2 (2021-06-11)
  */
 public class Avaliação4
 {   
