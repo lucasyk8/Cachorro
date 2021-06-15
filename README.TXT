@@ -4,9 +4,7 @@ Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
 ele/ela precisa saber. Os comentários devem incluir, pelo menos:
 ------------------------------------------------------------------------
 
-TITULO DO PROJETO:
-OBJETIVO DO PROJETO:
-VERSÃO ou DATA:
-COMO INICIAR O PROJETO:
-AUTORES:
-INSTRUÇÕES PARA O USUÁRIO:
+TITULO DO PROJETO: Lebre e Cachorros
+OBJETIVO DO PROJETO: Criar o jogo lebre e cachorros
+VERSÃO ou DATA: 1.2
+AUTORES: lucasyk8
