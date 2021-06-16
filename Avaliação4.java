@@ -78,9 +78,9 @@ public class Avaliação4
         iniciar(tabuleiro);
         // adição dos 3 cachorros e a lebre
         tabuleiro[1][0] = "Le";
-        tabuleiro[0][1] = "D1";
-        tabuleiro[1][1] = "D2";
-        tabuleiro[2][2] = "D3";
+        tabuleiro[0][3] = "D1";
+        tabuleiro[1][4] = "D2";
+        tabuleiro[2][3] = "D3";
         montaTela(tabuleiro);
         player = "Le";
         player2 = "Dog";
