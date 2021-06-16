@@ -6,12 +6,13 @@ import java.util.Scanner;
  * @author Lucas Yugi Kumagai
  * @version 1.1 (2021-06-11)
  * @version 1.2 (2021-06-14)
+ * @version 1.3 (2021-06-16)
  */
 public class Avaliação4
 {   
     /**
      * cria o tabuleiro
-     * @param String[][] tabuleiro
+     * 
      * @return void
      * 
      */
@@ -65,20 +66,21 @@ public class Avaliação4
         int contarDog = 3;
         int movimentoValido = 0;
         int vencedor = 0;
+        int[][] coordenada = new int[0][0];
         // visualização do tabuleiro 
         // 0|    00  00  D1 
         // 1| Le 00  00  00  D2
         // 2|    00  00  D3 
         //   --------------
         //   0   1   2   3   4
-        
+
         String[][] tabuleiro = new String[3][5];
         iniciar(tabuleiro);
         // adição dos 3 cachorros e a lebre
         tabuleiro[1][0] = "Le";
-        tabuleiro[0][3] = "D1";
-        tabuleiro[1][4] = "D2";
-        tabuleiro[2][3] = "D3";
+        tabuleiro[0][1] = "D1";
+        tabuleiro[1][1] = "D2";
+        tabuleiro[2][2] = "D3";
         montaTela(tabuleiro);
         player = "Le";
         player2 = "Dog";
@@ -105,22 +107,24 @@ public class Avaliação4
             }else{
                 System.out.println("jogada inválida, perdeu a vez");
             }
-             //verfica se a lebre ganhou
+            //verfica se a lebre ganhou
             if ("Le".equals(tabuleiro[1][4])){
                 System.out.print("lebre ganhou!");
                 vencedor = 1;
             }
             //verfica se os cachorros ganharam
             for (l = 0; l <= 2; l++){
-                if(!tabuleiro[l][1].equals("00")){
+                if (!tabuleiro[l][1].equals("00")){
                     contarDog = contarDog - 1;
                     if (contarDog == 0 && tabuleiro[1][0].equals("Le")){
-                        System.out.print("cachorro ganhou!");
+                        System.out.print("cachorros ganharam!");
                         vencedor = 1;
                     }
                 }
             }
+            contarDog = 3;
         }
         scan.close();
     }
 }
+
