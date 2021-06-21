@@ -11,7 +11,7 @@ public class AuxiliarC
     /**
      * 
      * @paran String[][] tabuleiro,String dog,String player2, int lMovimento,int cMovimento
-     * @return movimentoValido
+     * @return int movimentoValido
      */
     public static int validaMovimentoDogs(String[][] tabuleiro,String dog,String player2, int lMovimento,int cMovimento)
     {
@@ -25,7 +25,6 @@ public class AuxiliarC
                 if (tabuleiro[l][c].equals(dog)){
                     linhaDog = l;
                     colunaDog = c;
-
                 }
             }
         }

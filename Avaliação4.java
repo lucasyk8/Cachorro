@@ -66,7 +66,6 @@ public class Avaliação4
         int contarDog = 3;
         int movimentoValido = 0;
         int vencedor = 0;
-        int[][] coordenada = new int[0][0];
         // visualização do tabuleiro 
         // 0|    00  00  D1 
         // 1| Le 00  00  00  D2
@@ -90,7 +89,7 @@ public class Avaliação4
             l = scan.nextInt();
             System.out.print("player informe coordenada (coluna)");
             c = scan.nextInt();
-            if (AuxiliarL.validarMovimentoLe(tabuleiro,player,l,c) > 0){  
+            if (AuxiliarL.validarMovimentoLe(tabuleiro,player,l,c) == 1) {  
                 montaTela(tabuleiro);
             }else{
                 System.out.println("jogada inválida, perde a vez");

@@ -40,9 +40,6 @@ public class AuxiliarCTest
     {
     }
 
-    @Test
-    public void VerificaMovimento()
-    {
-    }
 }
+
 

@@ -29,7 +29,7 @@ class AuxiliarL
             }
             //valida movimento e movimenta
             for (l = 0; l <= 2;l++){
-                if(cMovimento > colunaLebre){
+                if(cMovimento >= colunaLebre){
                     for (c = colunaLebre; c <= colunaLebre + 1; c++){  
                         if (tabuleiro[l][c].equals("00")){
                             if(lMovimento == l && cMovimento == c){ 

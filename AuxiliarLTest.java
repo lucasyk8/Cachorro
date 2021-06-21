@@ -41,8 +41,15 @@ public class AuxiliarLTest
     }
 
     @Test
-    public void LebreAndarCasa()
+    public void validarMovimento()
     {
+        assertEquals(1, AuxiliarL.validarMovimentoLe(new String[][] {{"","00","00","D1",""},{"Le","00","00","00","D2"}, {"","00","00","D3",""}}, "Le", 1, 1));
     }
 }
+
+
+
+
+
+
 
